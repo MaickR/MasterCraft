@@ -595,6 +595,23 @@ nav.mainmenu {
 .only-for-mobile {
   display: block !important;
 }
+/* Mastercraft - Header mobile centered */
+.header_top_left,
+.header_top_right {
+  text-align: center;
+  float: none !important;
+  margin-bottom: 5px;
+}
+.header_top_left > img {
+  float: none;
+  display: inline-block;
+  vertical-align: middle;
+}
+.header_top_left > p,
+.header_top_right > p {
+  display: inline-block;
+  float: none !important;
+}
  
  /* new. */
  .review_comments {
@@ -1345,24 +1362,4 @@ width:16%;
 }
 .view_post {
   margin-top: 50px;
-}
-
-/* Mastercraft - Header mobile centered */
-.header_top_left,
-.header_top_right {
-  text-align: center;
-  float: none !important;
-  margin-bottom: 5px;
-}
-.header_top_left > img {
-  float: none;
-  display: inline-block;
-  vertical-align: middle;
-}
-.header_top_left > p,
-.header_top_right > p {
-  display: inline-block;
-  float: none !important;
-}
-
 }
