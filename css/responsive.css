@@ -137,12 +137,28 @@ ul.wid_social li {
 
 @media only screen and (min-width: 768px) and (max-width: 991px) {
 
-/* Mastercraft - Hide desktop menu, show mobile menu on tablets */
+.banner-btn {
+    font-size: 11px !important;
+    padding: 10px 20px !important;
+}
+
+/* Mastercraft - On tablets show desktop-style navigation (scaled) and hide the mobile-only menu */
 nav.mainmenu {
-  display: none !important;
+  display: block !important;
 }
 .only-for-mobile {
-  display: block !important;
+  display: none !important;
+}
+
+/* Ensure the mobile menu container (.mobi-menu) is hidden on tablets */
+.mobi-menu {
+  display: none !important;
+}
+
+/* Slightly scale down desktop nav items on tablet to fit better */
+nav.mainmenu ul li > a {
+  font-size: 14px; /* slightly smaller than desktop */
+  padding: 8px 12px; /* tighter padding for tablet */
 }
  
  /* new. */
@@ -197,12 +213,8 @@ width:100%
 .client_box {
   width: 35%;
 }
-.branding_box_heading > h2 {
-  width: 14%;
-}
-.dotted_line {
-  width: 79%;
-}
+.branding_box_heading > h2 { width: auto; float: none; }
+.dotted_line { display: none; }
 .footer_top_left > a {
   font-size: 12px;
   margin-right: 7px;
@@ -332,12 +344,8 @@ ul.wid_social li a {
 .client_box {
   width: 35%;
 }
-.branding_box_heading > h2 {
-  width: 14%;
-}
-.dotted_line {
-  width: 79%;
-}
+.branding_box_heading > h2 { width: auto; float: none; }
+.dotted_line { display: none; }
 .footer_top_left > a {
   font-size: 12px;
   margin-right: 7px;
@@ -588,6 +596,11 @@ ul#single_blog_nav {
 
 @media only screen and (max-width: 767px) {
 
+.banner-btn {
+    font-size: 10px !important;
+    padding: 8px 15px !important;
+}
+
 /* Mastercraft - Hide desktop menu, show mobile menu on phones */
 nav.mainmenu {
   display: none !important;
@@ -600,7 +613,7 @@ nav.mainmenu {
 .header_top_right {
   text-align: center;
   float: none !important;
-  margin-bottom: 5px;
+  margin-bottom: 2px;
 }
 .header_top_left > img {
   float: none;
@@ -671,6 +684,7 @@ width:100%
   font-size: 17px;
 }
 .mobi-menu {
+  display: none;
   left: 0;
   margin: 0 auto;
   max-width: 300px;
@@ -713,9 +727,11 @@ width:100%
 
 #cssmenu > ul > li > a {
   padding: 15px 20px;
+  text-align: center;
 }
 #cssmenu ul ul li a {
   padding: 15px 20px !important;
+  text-align: center;
 }
 .only-for-mobile {
   display: block !important;
@@ -993,12 +1009,8 @@ width: 100%;
 .client_box {
   width: 87%;
 }
-.dotted_line {
-  width: 46%;
-}
-.branding_box_heading h2 {
-  width: 34%;
-}
+.dotted_line { display: none; }
+.branding_box_heading h2 { width: auto; float: none; }
 #branding_caro.owl-carousel .owl-next {
   right: -38%;
 }
@@ -1254,12 +1266,8 @@ width:100%
 .trending_box .nav.nav-tabs {
   width: 75%;
 }
-.dotted_line {
-  width: 55%;
-}
-.branding_box_heading h2 {
-  width: 26%;
-}
+.dotted_line { display: none; }
+.branding_box_heading h2 { width: auto; float: none; }
 .footer_top_left input[type="text"] {
   width: 40%;
 }
@@ -1363,3 +1371,9 @@ width:16%;
 .view_post {
   margin-top: 50px;
 }
+
+
+
+
+
+

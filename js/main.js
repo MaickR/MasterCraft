@@ -1,4 +1,4 @@
-﻿(function($) {
+(function($) {
 	jQuery(document).ready(function($) {
 		$('.ofm li.m_nav').on('click', function() {
 			$(".mobi-menu").slideToggle("slow");
@@ -69,127 +69,123 @@
 	});
 	
 	jQuery(document).ready(function($){
+		// Product Carousels - Auto-play without navigation arrows
 		$("#owl-example").owlCarousel({
-			autoPlay: true,
-			center: true,
-			items : 5, //10 items above 1000px browser width
-			itemsDesktop : [1000,5], //5 items between 1000px and 901px
-			itemsDesktopSmall : [900,3], // betweem 900px and 601px
-			itemsTablet: [600,2], //2 items between 600 and 0
-			itemsMobile : [600,1], // itemsMobile disabled - inherit from itemsTablet option
-			pagination:false,
-			navigation:true,
-			navigationText:["<i class='fa-solid fa-angle-left'></i>","<i class='fa-solid fa-angle-right'></i>"]
+			autoPlay: 3000,
+			stopOnHover: true,
+			items : 4,
+			itemsDesktop : [1000,4],
+			itemsDesktopSmall : [900,3],
+			itemsTablet: [600,2],
+			itemsMobile : [480,1],
+			pagination: false,
+			navigation: false
 		});
 		$("#owl-example-two").owlCarousel({
-			autoPlay: true,
-			center: true,
-			items : 5, //10 items above 1000px browser width
-			itemsDesktop : [1000,5], //5 items between 1000px and 901px
-			itemsDesktopSmall : [900,3], // betweem 900px and 601px
-			itemsTablet: [600,2], //2 items between 600 and 0
-			itemsMobile : [600,1], // itemsMobile disabled - inherit from itemsTablet option
-			pagination:false,
-			navigation:true,
-			navigationText:["<i class='fa-solid fa-angle-left'></i>","<i class='fa-solid fa-angle-right'></i>"]
+			autoPlay: 3500,
+			stopOnHover: true,
+			items : 4,
+			itemsDesktop : [1000,4],
+			itemsDesktopSmall : [900,3],
+			itemsTablet: [600,2],
+			itemsMobile : [480,1],
+			pagination: false,
+			navigation: false
 		});
 		$("#owl-example-three").owlCarousel({
-			autoPlay: true,
-			center: true,
-			items : 5, //10 items above 1000px browser width
-			itemsDesktop : [1000,5], //5 items between 1000px and 901px
-			itemsDesktopSmall : [900,3], // betweem 900px and 601px
-			itemsTablet: [600,2], //2 items between 600 and 0
-			itemsMobile : [600,1], // itemsMobile disabled - inherit from itemsTablet option
-			pagination:false,
-			navigation:true,
-			navigationText:["<i class='fa-solid fa-angle-left'></i>","<i class='fa-solid fa-angle-right'></i>"]
+			autoPlay: 4000,
+			stopOnHover: true,
+			items : 4,
+			itemsDesktop : [1000,4],
+			itemsDesktopSmall : [900,3],
+			itemsTablet: [600,2],
+			itemsMobile : [480,1],
+			pagination: false,
+			navigation: false
 		});
 		$("#owl-example-four").owlCarousel({
-			autoPlay: true,
-			center: true,
-			items : 5, //10 items above 1000px browser width
-			itemsDesktop : [1000,5], //5 items between 1000px and 901px
-			itemsDesktopSmall : [900,3], // betweem 900px and 601px
-			itemsTablet: [600,2], //2 items between 600 and 0
-			itemsMobile : [600,1], // itemsMobile disabled - inherit from itemsTablet option
-			pagination:false,
-			navigation:true,
-			navigationText:["<i class='fa-solid fa-angle-left'></i>","<i class='fa-solid fa-angle-right'></i>"]
+			autoPlay: 3000,
+			stopOnHover: true,
+			items : 4,
+			itemsDesktop : [1000,4],
+			itemsDesktopSmall : [900,3],
+			itemsTablet: [600,2],
+			itemsMobile : [480,1],
+			pagination: false,
+			navigation: false
 		});
 		$("#owl-example1").owlCarousel({
-			autoPlay: true,
-			center: true,
-			items : 4, //4 items above 1000px browser width
-			itemsDesktop : [1000,4], //4 items between 1000px and 901px
-			itemsDesktopSmall : [900,3], // betweem 900px and 601px
-			itemsTablet: [600,2], //2 items between 600 and 0
-			itemsMobile : [600,1], // itemsMobile disabled - inherit from itemsTablet option
-			pagination:false,
-			navigation:true,
-			navigationText:["<i class='fa-solid fa-angle-left'></i>","<i class='fa-solid fa-angle-right'></i>"]
+			autoPlay: 3200,
+			stopOnHover: true,
+			items : 4,
+			itemsDesktop : [1000,4],
+			itemsDesktopSmall : [900,3],
+			itemsTablet: [600,2],
+			itemsMobile : [600,1],
+			pagination: false,
+			navigation: false
 		});
 		$("#owl-example2").owlCarousel({
-			autoPlay: true,
-			center: true,
-			items : 4, //4 items above 1000px browser width
-			itemsDesktop : [1000,4], //4 items between 1000px and 901px
-			itemsDesktopSmall : [900,3], // betweem 900px and 601px
-			itemsTablet: [600,2], //2 items between 600 and 0
-			itemsMobile : [600,1], // itemsMobile disabled - inherit from itemsTablet option
-			pagination:false,
-			navigation:true,
-			navigationText:["<i class='fa-solid fa-angle-left'></i>","<i class='fa-solid fa-angle-right'></i>"]
+			autoPlay: 3400,
+			stopOnHover: true,
+			items : 4,
+			itemsDesktop : [1000,4],
+			itemsDesktopSmall : [900,3],
+			itemsTablet: [600,2],
+			itemsMobile : [600,1],
+			pagination: false,
+			navigation: false
 		});
 		$("#owl-example3").owlCarousel({
-			autoPlay: true,
-			center: true,
-			items : 4, //4 items above 1000px browser width
-			itemsDesktop : [1000,4], //4 items between 1000px and 901px
-			itemsDesktopSmall : [900,3], // betweem 900px and 601px
-			itemsTablet: [600,2], //2 items between 600 and 0
-			itemsMobile : [600,1], // itemsMobile disabled - inherit from itemsTablet option
-			pagination:false,
-			navigation:true,
-			navigationText:["<i class='fa-solid fa-angle-left'></i>","<i class='fa-solid fa-angle-right'></i>"]
+			autoPlay: 3600,
+			stopOnHover: true,
+			items : 4,
+			itemsDesktop : [1000,4],
+			itemsDesktopSmall : [900,3],
+			itemsTablet: [600,2],
+			itemsMobile : [600,1],
+			pagination: false,
+			navigation: false
 		});
 		$("#owl-example4").owlCarousel({
-			autoPlay: true,
-			center: true,
-			items : 4, //4 items above 1000px browser width
-			itemsDesktop : [1000,4], //4 items between 1000px and 901px
-			itemsDesktopSmall : [900,3], // betweem 900px and 601px
-			itemsTablet: [600,2], //2 items between 600 and 0
-			itemsMobile : [600,1], // itemsMobile disabled - inherit from itemsTablet option
-			pagination:false,
-			navigation:true,
-			navigationText:["<i class='fa-solid fa-angle-left'></i>","<i class='fa-solid fa-angle-right'></i>"]
+			autoPlay: 3800,
+			stopOnHover: true,
+			items : 4,
+			itemsDesktop : [1000,4],
+			itemsDesktopSmall : [900,3],
+			itemsTablet: [600,2],
+			itemsMobile : [600,1],
+			pagination: false,
+			navigation: false
 		});
 		$("#owl-example-single").owlCarousel({
-			autoPlay: true,
+			autoPlay: 3000,
+			stopOnHover: true,
 			center: true,
-			items:4,
-			pagination:false,
-			navigation:true,
-			navigationText:["<i class='fa-solid fa-angle-left'></i>","<i class='fa-solid fa-angle-right'></i>"]
+			items: 4,
+			pagination: false,
+			navigation: false
 		});
+		// Branding Carousel - Auto-play, smooth, no controls
 		$("#branding_caro").owlCarousel({
-			autoPlay: true,
-			items : 6, //10 items above 1000px browser width
-			itemsDesktop : [1000,5], //5 items between 1000px and 901px
-			itemsDesktopSmall : [900,4], // betweem 900px and 601px
-			itemsTablet: [600,2], //2 items between 600 and 0
-			itemsMobile : false, // itemsMobile disabled - inherit from itemsTablet option
-			pagination:false,
-			navigation:true,
-			navigationText:["<i class='fa-solid fa-angle-left'></i>","<i class='fa-solid fa-angle-right'></i>"]
+			autoPlay: 2500,
+			stopOnHover: true,
+			items : 6,
+			itemsDesktop : [1200,5],
+			itemsDesktopSmall : [992,4],
+			itemsTablet: [768,3],
+			itemsMobile : [480,2],
+			pagination: false,
+			navigation: false,
+			slideSpeed: 300,
+			paginationSpeed: 400
 		});
 		// accordion
 		
 		$('.collapse').on('shown.bs.collapse', function(){
-			$(this).parent().find(".fa-solid fa-plus").removeClass("fa-solid fa-plus").addClass("fa-solid fa-minus");
+			$(this).parent().find(".fa fa-plus").removeClass("fa fa-plus").addClass("fa fa-minus");
 			}).on('hidden.bs.collapse', function(){
-			$(this).parent().find(".fa-solid fa-minus").removeClass("fa-solid fa-minus").addClass("fa-solid fa-plus");
+			$(this).parent().find(".fa fa-minus").removeClass("fa fa-minus").addClass("fa fa-plus");
 		});
 		$('#collapseTwo').collapse('show')
 		$('#collapseThree').collapse('show')

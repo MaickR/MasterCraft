@@ -1,96 +1,102 @@
-# Mastercraft Uniforms
+# MasterCraft Uniforms - Soluciones Textiles & Dotación Industrial 🏭👕
 
-Mastercraft Uniforms - Landing page and marketing site for a Colombian industrial uniform supplier. This repository contains a Bootstrap 3-based responsive landing page with product catalog previews, client testimonials, contact form with WhatsApp integration, and visual components tailored for the Colombian market.
+![MasterCraft Banner](https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=1200&h=400&fit=crop)
 
----
-
-## 🔧 Tecnologías usadas
-
-- HTML5, CSS3
-- Bootstrap 3
-- jQuery 3.6
-- Owl Carousel, bxSlider (carousels)
-- Revolution Slider (slideshow)
-- Font Awesome
-- JavaScript (custom scripts in `js/main.js` and `js/form-handler.js`)
+> **Plataforma web corporativa para MasterCraft Uniforms**, empresa líder con más de 45 años de experiencia en la fabricación de uniformes personalizados, dotación industrial y seguridad en Colombia.
 
 ---
 
-## 🎯 Objetivos del proyecto
+## 📋 Descripción del Proyecto
 
-- Proveer una landing page profesional y responsiva para Mastercraft Uniforms.
-- Enfatizar la experiencia en dotación industrial y productos de seguridad.
-- Facilitar contacto inmediato mediante WhatsApp con formulario incorporado.
-- Mostrar presencia nacional y empresas clientes.
+Este repositorio aloja el código fuente del sitio web oficial de **MasterCraft Uniforms**. La plataforma ha sido diseñada para reflejar la solidez y trayectoria de la compañía, ofreciendo a los clientes corporativos una experiencia de usuario fluida para la consulta de productos y solicitud de cotizaciones.
+
+El sistema integra un **Frontend moderno y responsive** con un **Backend en Node.js** que gestiona la captura de leads y la integración con canales de comunicación directa como WhatsApp.
+
+## ✨ Características Principales
+
+### 🏢 Identidad Corporativa & Contenido
+- **Historia y Trayectoria:** Sección detallada sobre los 45 años de experiencia y fundación en 1998.
+- **Infraestructura:** Visualización de la capacidad operativa (10 puntos de venta, 3 bodegas, flota propia).
+- **Clientes:** Carrusel de aliados estratégicos (Ecopetrol, Cerrejón, Constructora Capital).
+
+### 🛒 Catálogo & Experiencia de Usuario
+- **Showcase de Productos:** Categorías claras (Industrial, Seguridad, Bioseguridad).
+- **Vista Rápida (Quick View):** Modales interactivos con detalles de producto y botón de cotización directa.
+- **Diseño Responsive:** Adaptabilidad total a dispositivos móviles, tablets y escritorio.
+
+### 🔌 Funcionalidades Técnicas
+- **Gestión de Contacto:** Formulario validado con almacenamiento de leads en Excel (`.xlsx`).
+- **Integración WhatsApp:** Redirección inteligente con mensajes pre-llenados para agilizar la atención.
+- **Backend API:** Servidor Express.js robusto con manejo de CORS y validación de datos.
+- **Seguridad:** Implementación de Rate Limiting y sanitización de inputs.
 
 ---
 
-## 🚀 Qué incluye esta versión
+## 🛠️ Stack Tecnológico
 
-- Rediseño de `index.html` con secciones:
-  - Cabecera y navegación (con versión móvil optimizada)
-  - Hero slider (registro de mensajes, CTA para cotización)
-  - Propuestas de valor y secciones corporativas
-  - Catálogo de productos con pestañas y tarjetas
-  - Sección de clientes y testimonios
-  - Sección "Presencia Nacional" con ciudades
-  - Formulario de contacto (envía mensaje por WhatsApp con `js/form-handler.js`)
-  - Pie de página con información y enlaces
-- Integración de librerías JS (carousels, slider). Se corrigieron órdenes de inclusión de scripts y protecciones frente a plugins ausentes.
+| Área | Tecnologías |
+|------|-------------|
+| **Frontend** | HTML5, CSS3, Bootstrap 3, jQuery, Revolution Slider, Owl Carousel |
+| **Backend** | Node.js, Express.js |
+| **Datos** | XLSX (Librería para gestión de hojas de cálculo) |
+| **Herramientas** | Git, VS Code, npm |
 
 ---
 
-## 📥 Instalación y ejecución local
+## 🚀 Instalación y Despliegue
 
-1. Clona este repositorio en tu máquina local:
+Sigue estos pasos para ejecutar el proyecto en tu entorno local:
 
-```powershell
+### 1. Clonar el Repositorio
+```bash
 git clone https://github.com/MaickR/MasterCraft.git
 cd MasterCraft
 ```
 
-2. Abrir `index.html` con un servidor local o extensión de tu editor, por ejemplo VS Code — Live Server.
+### 2. Configurar el Backend
+El servidor backend maneja el formulario de contacto y la generación de leads.
 
-3. Si ejecutas desde archivos locales, recuerda que algunos plugins pueden necesitar ser servidos desde un servidor local para evitar problemas con file:// URLs.
+```bash
+cd server
+npm install
+```
 
----
+### 3. Iniciar el Servidor
+```bash
+node server.js
+# El servidor iniciará en http://localhost:3000
+```
 
-## ⚙️ Desarrollo y uso
-
-- `js/form-handler.js` envía el formulario rellenado por el usuario a WhatsApp con un mensaje pre-formateado mediante `wa.me`.
-- Las librerías (Owl, bxSlider, RS) se encuentran en `js/` y requieren referencias correctas en `index.html`.
-- `style.css` y `css/responsive.css` contienen los estilos para escritorio y media queries respectivamente.
-
----
-
-## ✅ Check-list de calidad
-
-- [x] Navegación responsive (desktop / tablet / mobile)
-- [x] Formulario de contacto funcional con integración básica a WhatsApp
-- [x] Secciones contenido en español y adaptadas al mercado colombiano
-- [x] Footer con datos de contacto
+### 4. Ejecutar el Frontend
+Puedes abrir el archivo `index.html` directamente en tu navegador o usar una extensión como **Live Server** en VS Code para servir los archivos estáticos.
 
 ---
 
-## 📸 Capturas
+## 📂 Estructura del Proyecto
 
-(Agregar capturas en `images/` y referenciarlas aquí.)
-
----
-
-## 📝 Notas finales
-
-- Antes de publicar en producción, confirmar:
-  - Credenciales y permisos de GitHub y hosting
-  - Verificación de los plugins (URL y la versión) e inclusión correcta
-  - Optimizaciones de imagen y minificación (si procede)
-
----
-
-## 📫 Contacto
-
-- Mastercraft - info@mastercraft.com.co
+```
+MasterCraft/
+├── css/                 # Estilos y hojas de cascada
+├── fonts/               # Tipografías e iconos
+├── images/              # Recursos gráficos optimizados
+├── js/                  # Lógica frontend y plugins
+├── leads/               # Almacenamiento de contactos (generado por backend)
+├── server/              # Código fuente del servidor Node.js
+│   ├── server.js        # Punto de entrada del API
+│   └── package.json     # Dependencias del backend
+├── index.html           # Página principal
+└── README.md            # Documentación del proyecto
+```
 
 ---
 
-© 2024 Mastercraft Uniforms. Todos los derechos reservados.
+## 📞 Contacto y Soporte
+
+Para soporte técnico o consultas sobre el desarrollo:
+
+*   **Desarrollador:** [MaickR](https://github.com/MaickR)
+*   **Empresa:** MasterCraft Uniforms Diseño Y Fabricación Sas
+*   **Ubicación:** Bogotá D.C., Colombia
+
+---
+*© 2025 MasterCraft Uniforms. Todos los derechos reservados.*
