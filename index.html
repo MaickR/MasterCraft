@@ -45,6 +45,19 @@
 	<link rel="stylesheet" href="style.css">
 	<link rel="stylesheet" href="css/responsive.css">
 	
+	<!-- AOS Animation css -->
+	<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+	<style>
+		.social_icons a {
+			color: #e8e8e8 !important;
+			transition: all 0.3s ease;
+		}
+		.social_icons a:hover {
+			color: #ff6766 !important;
+		}
+	</style>
+
 	<!-- Favicons -->
 	<link rel="apple-touch-icon-precomposed" href="images/apple-touch-icon-precomposed.png">
 	<link rel="icon" type="image/svg+xml" href="images/favicon_m.svg"/>
@@ -74,6 +87,12 @@
 				<div class="col-md-6 col-sm-6 col-xs-12">
 					<div class="header_top_right floatright">
 						<p><i class="fa fa-phone"></i> +57 301 3938723</p>
+						<div class="social_icons" style="display: inline-block; margin-left: 20px;">
+							<a href="#" style="margin-right: 10px;"><i class="fa fa-facebook"></i></a>
+							<a href="#" style="margin-right: 10px;"><i class="fa fa-instagram"></i></a>
+							<a href="#" style="margin-right: 10px;"><i class="fa fa-linkedin"></i></a>
+							<a href="#"><i class="fa fa-twitter"></i></a>
+						</div>
 					</div>
 				</div>
 			</div>
@@ -147,7 +166,7 @@
 							data-speed="600"
 							data-start="0"
 							data-easing="Power3.easeInOut"
-							style="z-index: 1; background-color: rgba(0, 0, 0, 0.6); width: 100%; height: 100%; position: absolute; left: 0; top: 0;">
+							style="z-index: 1; background-color: rgba(0, 0, 0, 0.6); width: 100%; height: 100%; position: absolute; left: 0; top: 0; min-width: 100%; min-height: 100%;">
 						</div>
 
 						<div class="tp-caption large_black sfr" data-x="center" data-y="140" data-speed="1100" data-start="1100" data-easing="easeInOutBack" 
@@ -178,7 +197,7 @@
 							data-speed="600"
 							data-start="0"
 							data-easing="Power3.easeInOut"
-							style="z-index: 1; background-color: rgba(0, 0, 0, 0.6); width: 100%; height: 100%; position: absolute; left: 0; top: 0;">
+							style="z-index: 1; background-color: rgba(0, 0, 0, 0.6); width: 100%; height: 100%; position: absolute; left: 0; top: 0; min-width: 100%; min-height: 100%;">
 						</div>
 
 						<div class="tp-caption large_black sfr" data-x="center" data-y="140" data-speed="1100" data-start="1100" data-easing="easeInOutBack" 
@@ -235,7 +254,7 @@
 	</div>
 	<!-- HOME SLIDER -->
 	
-	<div class="call_to_action_area">
+	<div class="call_to_action_area" data-aos="fade-up">
 		<div class="container">
 			<div class="row">
 				<div class="col-md-12 col-sm-12 col-xs-12">
@@ -278,7 +297,7 @@
 				<div class="col-md-12 col-sm-12 col-xs-12">
 					<div class="about_inner">
 						<div class="row">
-							<div class="col-md-6 col-sm-6 col-xs-12">
+							<div class="col-md-6 col-sm-6 col-xs-12" data-aos="fade-right">
 								<div class="about_text">
 									<h2>Quiénes Somos</h2>
 									<div class="multi_line"><span></span><span></span><span></span></div>
@@ -293,7 +312,7 @@
 									<a class="btn btn-default" href="#contacto">Solicitar Cotización</a>
 								</div>
 							</div>
-							<div class="col-md-6 col-sm-6 col-xs-12">
+							<div class="col-md-6 col-sm-6 col-xs-12" data-aos="fade-left">
 								<div class="about_image">
 									<img src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=600&h=450&fit=crop" alt="Fabricación de Uniformes Industriales - MasterCraft" />
 								</div>
@@ -305,7 +324,7 @@
 		</div>
 	</section>
 	<!-- Promotion area (adapted from original template) -->
-	<section class="promotion_area">
+	<section class="promotion_area" data-aos="zoom-in">
 		<div class="container">
 			<div class="row">
 				<div class="col-md-12">
@@ -328,7 +347,7 @@
 									</div>
 									<div class="promotion_bottom">
 										<div class="images_box">
-											<img src="https://www.rentaire.es/pub/media/bss/webp/media/catalog/product/cache/066abd52619f229693279299dd2636df/c/a/casco-seguridad-amarillo.webp\" alt="Dotación Seguridad Industrial" />
+											<img src="https://myfarmdelivery.com/wp-content/uploads/2021/01/dotacio%CC%81n-industrial-colombia-1.jpg" alt="Dotación Seguridad Industrial" />
 										</div>
 										<div class="promo_text_bottom">
 											<h5>Dotación de Seguridad</h5>
@@ -379,7 +398,7 @@
 	</section>
 	
 	<!-- CTA Banner -->
-	<section class="cta_banner">
+	<section class="cta_banner" data-aos="fade-up">
 		<div class="container">
 			<div class="row">
 				<div class="col-md-12">
@@ -391,7 +410,7 @@
 		</div>
 	</section>
 	
-	<section class="trending_area" id="productos">
+	<section class="trending_area" id="productos" data-aos="fade-up">
 		<div class="container">
 			<div class="row">
 				<div class="col-md-12 col-sm-12 col-xs-12">
@@ -728,7 +747,7 @@
 	</section>
 	
 	
-	<section class="fresh_blog_area" id="presencia">
+	<section class="fresh_blog_area" id="presencia" data-aos="fade-up">
 		<div class="container">
 			<div class="row">
 				<div class="col-md-12 col-sm-12 col-xs-12">
@@ -780,7 +799,7 @@
 		</div>
 	</section>
 	
-	<section class="testimonial_area" id="testimonios">
+	<section class="testimonial_area" id="testimonios" data-aos="fade-up">
 		<div class="container">
 			<div class="row">
 				<div class="col-md-12">
@@ -886,7 +905,7 @@
 			</div>
 		</div>
 	</section>
-	<section class="branding_area" id="clientes">
+	<section class="branding_area" id="clientes" data-aos="fade-up">
 		<div class="container">
 			<div class="row">
 				<div class="col-md-12 col-sm-12 col-xs-12">
@@ -930,7 +949,7 @@
 		</div>
 	</section>
 
-	<section class="contact_area" id="contacto">
+	<section class="contact_area" id="contacto" data-aos="fade-up">
 		<div class="container">
 			<div class="row">
 				<div class="col-md-12">
@@ -1310,6 +1329,15 @@
         });
         
     })(jQuery);
+    </script>
+
+    <!-- AOS Animation Script -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init({
+        duration: 1000,
+        once: true,
+      });
     </script>
   </body>
 
