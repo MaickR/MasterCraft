@@ -56,6 +56,294 @@
 		.social_icons a:hover {
 			color: #ff6766 !important;
 		}
+		/* Slider responsive layout and caption fixes */
+		.slider-wrap .fullwidthbanner-container,
+		.slider-wrap .fullwidthbanner {
+			width: 100%;
+			height: 60vh; /* Hero height - adjusts with viewport height */
+			min-height: 360px;
+			max-height: 800px;
+			overflow: hidden;
+			margin-bottom: 24px; /* Provide breathing space before CTA */
+			position: relative !important;
+			z-index: 0;
+		}
+		.slider-wrap .fullwidthbanner img.banner-img {
+			width: 100%;
+			height: 100%;
+			object-fit: cover; /* Ensures images cover the area proportionally */
+			display: block;
+			position: relative;
+			z-index: 0;
+		}
+		/* Ensure captions remain inside the slider and do not overflow */
+		.slider-wrap .tp-caption {
+			max-width: 90% !important;
+			left: 50% !important;
+			transform: translateX(-50%) !important;
+			box-sizing: border-box;
+			z-index: 2 !important;
+		}
+		/* Ensure call-to-action area is above the slider content*/
+		.call_to_action_area {
+			position: relative;
+			z-index: 5;
+			margin-top: 0 !important;
+			clear: both;
+		}
+
+		/* Responsive caption sizing to prevent overflow on small screens */
+		.banner-subtitle {
+			font-size: 60px;
+			line-height: 1.2;
+		}
+		.banner-title {
+			font-size: 48px;
+			line-height: 60px;
+		}
+
+		@media (max-width: 992px) {
+			.banner-subtitle {
+				font-size: 34px !important;
+				line-height: 1.2 !important;
+			}
+			.banner-title {
+				font-size: 30px !important;
+				line-height: 1.2 !important;
+			}
+			.banner-btn {
+				padding: 10px 20px !important;
+				font-size: 12px !important;
+			}
+		}
+		@media (max-width: 576px) {
+			.slider-wrap .fullwidthbanner {
+				height: 50vh; /* Slightly taller to fit content */
+				min-height: 300px;
+			}
+			.banner-subtitle {
+				font-size: 16px !important;
+				line-height: 1.4 !important;
+				top: 40px !important;
+				margin-bottom: 0 !important;
+				white-space: normal !important;
+				width: 90% !important;
+				text-align: center !important;
+			}
+			.banner-title {
+				font-size: 20px !important;
+				line-height: 1.3 !important;
+				top: 90px !important;
+				margin-bottom: 0 !important;
+				white-space: normal !important;
+				width: 90% !important;
+				text-align: center !important;
+			}
+			.banner-sep-wrap {
+				display: none !important;
+			}
+			.banner-btn-wrap {
+				top: 190px !important;
+			}
+			.banner-btn {
+				padding: 8px 16px !important;
+				font-size: 11px !important;
+			}
+		}
+		@media (max-width: 360px) {
+			.banner-subtitle {
+				font-size: 14px !important;
+			}
+			.banner-title {
+				font-size: 17px !important;
+				top: 85px !important;
+			}
+			.banner-btn-wrap {
+				top: 170px !important;
+			}
+		}
+
+		/* Certifications Section Styles */
+		.certifications_area {
+			padding: 60px 0;
+			background-color: #f9f9f9;
+			border-top: 1px solid #e0e0e0;
+		}
+		.certifications_area .section-header {
+			margin-bottom: 40px;
+		}
+		.cert-card {
+			background: #fff;
+			padding: 30px 20px;
+			border-radius: 10px;
+			box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+			text-align: center;
+			transition: transform 0.3s ease, box-shadow 0.3s ease;
+			height: 100%;
+			margin-bottom: 30px;
+			border-bottom: 3px solid transparent;
+		}
+		.cert-card:hover {
+			transform: translateY(-5px);
+			box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+			border-bottom: 3px solid #ff6766;
+		}
+		.cert-img-wrapper {
+			height: 120px;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			margin-bottom: 20px;
+		}
+		.cert-img-wrapper img {
+			max-height: 100%;
+			max-width: 100%;
+			object-fit: contain;
+			filter: grayscale(10%);
+			transition: filter 0.3s ease;
+		}
+		.cert-card:hover .cert-img-wrapper img {
+			filter: grayscale(0%);
+		}
+		.cert-title {
+			font-family: 'Montserrat', sans-serif;
+			font-weight: 700;
+			font-size: 18px;
+			color: #333;
+			margin-bottom: 10px;
+			text-transform: uppercase;
+		}
+		.cert-desc {
+			font-size: 14px;
+			color: #666;
+			line-height: 1.5;
+		}
+		.cert-code {
+			display: inline-block;
+			background: #f0f0f0;
+			color: #555;
+			padding: 4px 10px;
+			border-radius: 20px;
+			font-size: 12px;
+			font-weight: 600;
+			margin-top: 15px;
+		}
+
+		/* Christmas Promo Modal Styles */
+		/* Center Modal Vertically */
+		#christmasModal {
+			text-align: center;
+			padding: 0 !important;
+		}
+		#christmasModal:before {
+			content: '';
+			display: inline-block;
+			height: 100%;
+			vertical-align: middle;
+			margin-right: -4px;
+		}
+		#christmasModal .modal-dialog {
+			display: inline-block;
+			text-align: left;
+			vertical-align: middle;
+			width: 90%; /* Responsive width */
+			max-width: 600px; /* Max width for larger screens */
+		}
+
+		.christmas-modal-content {
+			background: #fff;
+			border: none;
+			border-radius: 15px;
+			overflow: hidden;
+			box-shadow: 0 15px 35px rgba(0,0,0,0.2);
+			position: relative;
+		}
+		.christmas-modal-content::before {
+			content: '';
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: 8px;
+			background: repeating-linear-gradient(45deg, #ff6766, #ff6766 10px, #fff 10px, #fff 20px, #2ecc71 20px, #2ecc71 30px, #fff 30px, #fff 40px);
+		}
+		.christmas-header {
+			text-align: center;
+			padding-top: 30px;
+			border: none;
+		}
+		.christmas-icon-wrapper {
+			width: 80px;
+			height: 80px;
+			background: #fdf2f2;
+			border-radius: 50%;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			margin: 0 auto 15px;
+			animation: pulse-christmas 2s infinite;
+		}
+		.christmas-icon {
+			font-size: 40px;
+			color: #ff6766;
+		}
+		.christmas-title {
+			font-family: 'Montserrat', sans-serif;
+			font-weight: 700;
+			color: #2c3e50;
+			font-size: 24px;
+			margin-bottom: 5px;
+		}
+		.christmas-subtitle {
+			color: #2ecc71;
+			font-weight: 600;
+			font-size: 16px;
+			text-transform: uppercase;
+			letter-spacing: 1px;
+		}
+		.christmas-body {
+			text-align: center;
+			padding: 10px 30px 30px;
+		}
+		.christmas-text {
+			color: #555;
+			font-size: 16px;
+			line-height: 1.6;
+			margin-bottom: 25px;
+		}
+		.btn-christmas {
+			background: #ff6766;
+			color: #fff;
+			padding: 12px 35px;
+			border-radius: 50px;
+			font-weight: 700;
+			text-transform: uppercase;
+			border: none;
+			box-shadow: 0 5px 15px rgba(255, 103, 102, 0.3);
+			transition: all 0.3s ease;
+		}
+		.btn-christmas:hover {
+			background: #e64c4c;
+			transform: translateY(-2px);
+			box-shadow: 0 8px 20px rgba(255, 103, 102, 0.4);
+			color: #fff;
+		}
+		.christmas-footer {
+			background: #f9f9f9;
+			padding: 15px;
+			text-align: center;
+			border-top: 1px solid #eee;
+		}
+		.christmas-footer p {
+			margin: 0;
+			font-size: 12px;
+			color: #888;
+		}
+		@keyframes pulse-christmas {
+			0% { transform: scale(1); box-shadow: 0 0 0 0 rgba(255, 103, 102, 0.4); }
+			70% { transform: scale(1.05); box-shadow: 0 0 0 10px rgba(255, 103, 102, 0); }
+			100% { transform: scale(1); box-shadow: 0 0 0 0 rgba(255, 103, 102, 0); }
+		}
 	</style>
 
 	<!-- Favicons -->
@@ -86,7 +374,7 @@
 				</div>
 				<div class="col-md-6 col-sm-6 col-xs-12">
 					<div class="header_top_right floatright">
-						<p><i class="fa fa-phone"></i> +57 301 3938723</p>
+						<p><i class="fa fa-phone"></i> 301 3938723</p>
 						<div class="social_icons" style="display: inline-block; margin-left: 20px;">
 							<a href="#" style="margin-right: 10px;"><i class="fa fa-facebook"></i></a>
 							<a href="#" style="margin-right: 10px;"><i class="fa fa-instagram"></i></a>
@@ -157,93 +445,63 @@
 			<div class="fullwidthbanner">
 				<ul>
 					<li data-transition="random" data-slotamount="7" data-masterspeed="1000">
-						<img src="https://images.unsplash.com/photo-1504307651254-35680f356dfd?w=1920&h=800&fit=crop" alt="Trabajadores industriales con uniformes" >
+						<img class="banner-img" loading="lazy" src="images/banner/MasterCraft.png" alt="Trabajadores industriales con uniformes - MasterCraft" >
 						
-						<!-- Overlay -->
-						<div class="tp-caption fade"
-							data-x="0"
-							data-y="0"
-							data-speed="600"
-							data-start="0"
-							data-easing="Power3.easeInOut"
-							style="z-index: 1; background-color: rgba(0, 0, 0, 0.6); width: 100%; height: 100%; position: absolute; left: 0; top: 0; min-width: 100%; min-height: 100%;">
-						</div>
-
-						<div class="tp-caption large_black sfr" data-x="center" data-y="140" data-speed="1100" data-start="1100" data-easing="easeInOutBack" 
-							style="font-size: 60px; font-weight: normal; text-transform: inherit; color: #ff6766;font-family: manustrialmanustrial;font-style:italic;text-shadow:0px 0px 3px #000; text-align: center; z-index: 2;">
+						<div class="tp-caption large_black sfr banner-subtitle start" data-x="center" data-y="140" data-speed="1100" data-start="1100" data-easing="easeInOutBack" 
+							style="font-weight: normal; text-transform: inherit; color: #ff6766;font-family: manustrialmanustrial;font-style:italic;text-shadow:0px 0px 3px #000; text-align: center; z-index: 2;">
 							Uniformes Personalizados
 						</div>
-						<div class="tp-caption large_black sfr" data-x="center" data-y="230" data-speed="1100" data-start="1400" data-easing="easeInOutBack"
-							style="font-family: 'Montserrat', sans-serif; font-size: 48px; font-weight: 700; line-height:60px;text-transform: uppercase; color: #ffffff; text-shadow: 0 0 5px #000; text-align: center; z-index: 2;">
+						<div class="tp-caption large_black sfr banner-title start" data-x="center" data-y="230" data-speed="1100" data-start="1400" data-easing="easeInOutBack"
+							style="font-family: 'Montserrat', sans-serif; font-weight: 700; text-transform: uppercase; color: #ffffff; text-shadow: 0 0 5px #000; text-align: center; z-index: 2;">
 							Calidad Ignífuga y Seguridad
 						</div>
-						<div class="tp-caption large_black sfr carousel-caption-inner" data-x="center" data-y="300" data-speed="1100" data-start="1400" data-easing="easeInOutBack"
+						<div class="tp-caption large_black sfr carousel-caption-inner banner-sep-wrap" data-x="center" data-y="300" data-speed="1100" data-start="1400" data-easing="easeInOutBack"
 							style="text-align: center; z-index: 2;">
 							<img src="images/sep-b.png" alt="" />
 						</div>
-						<div class="tp-caption lfb carousel-caption-inner" data-x="center" data-y="350" data-speed="1300" data-start="1700" data-easing="easeInOutBack" 
+						<div class="tp-caption lfb carousel-caption-inner banner-btn-wrap" data-x="center" data-y="350" data-speed="1300" data-start="1700" data-easing="easeInOutBack" 
 							style="text-align: center; z-index: 2;">
 							<a href="https://wa.me/573013938723" target="_blank" class="banner-btn">COTIZAR AHORA</a>
 						</div>
 					</li>
 
 					<li data-transition="random" data-slotamount="7" data-masterspeed="1000">
-						<img src="https://images.unsplash.com/photo-1504917595217-d4dc5ebe6122?w=1920&h=800&fit=crop" alt="Trabajadores mineros con equipo de seguridad" >
+						<img class="banner-img" loading="lazy" src="images/banner/MasterCraft-1.png" alt="Trabajadores mineros con equipo de seguridad - MasterCraft" >
 						
-						<!-- Overlay -->
-						<div class="tp-caption fade"
-							data-x="0"
-							data-y="0"
-							data-speed="600"
-							data-start="0"
-							data-easing="Power3.easeInOut"
-							style="z-index: 1; background-color: rgba(0, 0, 0, 0.6); width: 100%; height: 100%; position: absolute; left: 0; top: 0; min-width: 100%; min-height: 100%;">
-						</div>
-
-						<div class="tp-caption large_black sfr" data-x="center" data-y="140" data-speed="1100" data-start="1100" data-easing="easeInOutBack" 
-							style="font-size: 60px; font-weight: normal; text-transform: inherit; color: #ff6766;font-family: manustrialmanustrial;font-style:italic;text-shadow:0px 0px 3px #000; text-align: center; z-index: 2;">
+						<div class="tp-caption large_black sfr banner-subtitle start" data-x="center" data-y="140" data-speed="1100" data-start="1100" data-easing="easeInOutBack" 
+							style="font-weight: normal; text-transform: inherit; color: #ff6766;font-family: manustrialmanustrial;font-style:italic;text-shadow:0px 0px 3px #000; text-align: center; z-index: 2;">
 							Más de 45 Años de Experiencia
 						</div>
-						<div class="tp-caption large_black sfr" data-x="center" data-y="230" data-speed="1100" data-start="1400" data-easing="easeInOutBack"
-							style="font-family: 'Montserrat', sans-serif; font-size: 40px; font-weight: 700; line-height:50px;text-transform: uppercase; color: #ffffff; text-shadow: 0 0 5px #000; text-align: center; z-index: 2;">
+						<div class="tp-caption large_black sfr banner-title start" data-x="center" data-y="230" data-speed="1100" data-start="1400" data-easing="easeInOutBack"
+							style="font-family: 'Montserrat', sans-serif; font-weight: 700; text-transform: uppercase; color: #ffffff; text-shadow: 0 0 5px #000; text-align: center; z-index: 2;">
 							Aliados de Grandes Constructoras y Mineras
 						</div>
-						<div class="tp-caption large_black sfr carousel-caption-inner" data-x="center" data-y="300" data-speed="1100" data-start="1400" data-easing="easeInOutBack"
+						<div class="tp-caption large_black sfr carousel-caption-inner banner-sep-wrap" data-x="center" data-y="300" data-speed="1100" data-start="1400" data-easing="easeInOutBack"
 							style="text-align: center; z-index: 2;">
 							<img src="images/sep-b.png" alt="" />
 						</div>
-						<div class="tp-caption lfb carousel-caption-inner" data-x="center" data-y="350" data-speed="1300" data-start="1700" data-easing="easeInOutBack" 
+						<div class="tp-caption lfb carousel-caption-inner banner-btn-wrap" data-x="center" data-y="350" data-speed="1300" data-start="1700" data-easing="easeInOutBack" 
 							style="text-align: center; z-index: 2;">
 							<a href="#productos" class="banner-btn">VER CATÁLOGO</a>
 						</div>
 					</li>
 
 					<li data-transition="random" data-slotamount="7" data-masterspeed="1000">
-						<img src="https://images.unsplash.com/photo-1590845947670-c009801ffa74?w=1920&h=800&fit=crop" alt="Seguridad industrial y equipos de protección personal" >
+						<img class="banner-img" loading="lazy" src="images/banner/MasterCraft-2.png" alt="Seguridad industrial y equipos de protección personal - MasterCraft" >
 						
-						<!-- Overlay -->
-						<div class="tp-caption fade"
-							data-x="0"
-							data-y="0"
-							data-speed="600"
-							data-start="0"
-							data-easing="Power3.easeInOut"
-							style="z-index: 1; background-color: rgba(0, 0, 0, 0.6); width: 100%; height: 100%; position: absolute; left: 0; top: 0;">
-						</div>
-
-						<div class="tp-caption large_black sfr" data-x="center" data-y="140" data-speed="1100" data-start="1100" data-easing="easeInOutBack" 
-							style="font-size: 60px; font-weight: normal; text-transform: inherit; color: #ff6766;font-family: manustrialmanustrial;font-style:italic;text-shadow:0px 0px 3px #000; text-align: center; z-index: 2;">
+						<div class="tp-caption large_black sfr banner-subtitle start" data-x="center" data-y="140" data-speed="1100" data-start="1100" data-easing="easeInOutBack" 
+							style="font-weight: normal; text-transform: inherit; color: #ff6766;font-family: manustrialmanustrial;font-style:italic;text-shadow:0px 0px 3px #000; text-align: center; z-index: 2;">
 							Infraestructura Nacional
 						</div>
-						<div class="tp-caption large_black sfr" data-x="center" data-y="230" data-speed="1100" data-start="1400" data-easing="easeInOutBack"
-							style="font-family: 'Montserrat', sans-serif; font-size: 48px; font-weight: 700; line-height:60px;text-transform: uppercase; color: #ffffff; text-shadow: 0 0 5px #000; text-align: center; z-index: 2;">
-							10 Puntos de Venta y Flota Propia
+						<div class="tp-caption large_black sfr banner-title start" data-x="center" data-y="230" data-speed="1100" data-start="1400" data-easing="easeInOutBack"
+							style="font-family: 'Montserrat', sans-serif; font-weight: 700; text-transform: uppercase; color: #ffffff; text-shadow: 0 0 5px #000; text-align: center; z-index: 2;">
+							Cobertura Nacional y Entrega Exprés
 						</div>
-						<div class="tp-caption large_black sfr carousel-caption-inner" data-x="center" data-y="300" data-speed="1100" data-start="1400" data-easing="easeInOutBack"
+						<div class="tp-caption large_black sfr carousel-caption-inner banner-sep-wrap" data-x="center" data-y="300" data-speed="1100" data-start="1400" data-easing="easeInOutBack"
 							style="text-align: center; z-index: 2;">
 							<img src="images/sep-b.png" alt="" />
 						</div>
-						<div class="tp-caption lfb carousel-caption-inner" data-x="center" data-y="350" data-speed="1300" data-start="1700" data-easing="easeInOutBack" 
+						<div class="tp-caption lfb carousel-caption-inner banner-btn-wrap" data-x="center" data-y="350" data-speed="1300" data-start="1700" data-easing="easeInOutBack" 
 							style="text-align: center; z-index: 2;">
 							<a href="#contacto" class="banner-btn">CONTÁCTENOS</a>
 						</div>
@@ -355,7 +613,7 @@
 											<a href="#" data-product="Casco de Seguridad">Ver Productos <i class="fa fa-caret-right"></i></a>
 										</div>
 										<div class="hover_images_bottom hover_images">
-											<img src="https://images.pexels.com/photos/5727885/pexels-photo-5727885.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Equipos de Protección Personal" />
+											<img src="images/dotacion-seguridad.png" alt="Equipos de Protección Personal" />
 										</div>
 									</div>
 								</div>
@@ -377,7 +635,7 @@
 									</div>
 									<div class="promotion_top promotion_bottom_b">
 										<div class="images_box">
-											<img src="https://images.pexels.com/photos/3771111/pexels-photo-3771111.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Diseño Personalizado" />
+											<img src="images/diseno.png" alt="Diseño Personalizado" />
 										</div>
 										<div class="promo_text_bottom promo_text_b">
 											<h5>Diseño Personalizado</h5>
@@ -905,6 +1163,58 @@
 			</div>
 		</div>
 	</section>
+
+	<!-- CERTIFICATIONS SECTION -->
+	<section class="certifications_area" data-aos="fade-up">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12">
+					<div class="section-header text-center">
+						<h2>Certificaciones de Calidad</h2>
+						<div class="multi_line"><span></span><span></span><span></span></div>
+						<p class="section-subtitle">Comprometidos con la excelencia, la seguridad y el medio ambiente</p>
+					</div>
+				</div>
+			</div>
+			<div class="row">
+				<!-- ISO 9001 -->
+				<div class="col-md-4 col-sm-4 col-xs-12">
+					<div class="cert-card">
+						<div class="cert-img-wrapper">
+							<img src="images/ISO/9001.png" alt="Certificación ISO 9001 Calidad" loading="lazy">
+						</div>
+						<h3 class="cert-title">Gestión de Calidad</h3>
+						<p class="cert-desc">Garantizamos estándares superiores en cada proceso de fabricación y servicio.</p>
+						<span class="cert-code">ISO 9001:2015</span>
+					</div>
+				</div>
+				<!-- ISO 14001 -->
+				<div class="col-md-4 col-sm-4 col-xs-12">
+					<div class="cert-card">
+						<div class="cert-img-wrapper">
+							<img src="images/ISO/14001.png" alt="Certificación ISO 14001 Ambiental" loading="lazy">
+						</div>
+						<h3 class="cert-title">Gestión Ambiental</h3>
+						<p class="cert-desc">Compromiso responsable con el medio ambiente y procesos sostenibles.</p>
+						<span class="cert-code">ISO 14001:2015</span>
+					</div>
+				</div>
+				<!-- ISO 45001 -->
+				<div class="col-md-4 col-sm-4 col-xs-12">
+					<div class="cert-card">
+						<div class="cert-img-wrapper">
+							<img src="images/ISO/45001.png" alt="Certificación ISO 45001 Seguridad" loading="lazy">
+						</div>
+						<h3 class="cert-title">Seguridad y Salud</h3>
+						<p class="cert-desc">Priorizamos la seguridad y salud ocupacional en todas nuestras operaciones.</p>
+						<span class="cert-code">ISO 45001:2018</span>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- END CERTIFICATIONS SECTION -->
+
 	<section class="branding_area" id="clientes" data-aos="fade-up">
 		<div class="container">
 			<div class="row">
@@ -1055,7 +1365,7 @@
 							<div class="wid_line"></div>
 							<address>
 								<i class="fa fa-map-marker"></i> Bogotá D.C., Colombia<br>
-								<i class="fa fa-phone"></i> <a href="tel:+573013938723" style="color: inherit;">(+57) 301 393 8723</a><br>
+								<i class="fa fa-phone"></i> <a href="tel:3013938723" style="color: inherit;">301 393 8723</a><br>
 								<i class="fa fa-whatsapp"></i> <a href="https://wa.me/573013938723" target="_blank" style="color: inherit;">WhatsApp</a><br>
 								<i class="fa fa-envelope"></i> <a href="mailto:info@mastercraft.com.co" style="color: inherit;">info@mastercraft.com.co</a>
 							</address>
@@ -1145,6 +1455,54 @@
         <span class="whatsapp-tooltip">¿Necesita ayuda? Escríbanos</span>
     </a>
     
+    <!-- Christmas Promo Modal -->
+    <div class="modal fade" id="christmasModal" tabindex="-1" role="dialog" aria-labelledby="christmasModalLabel">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content christmas-modal-content">
+                <div class="modal-header christmas-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close" style="position: absolute; right: 15px; top: 15px; z-index: 10;"><span aria-hidden="true">&times;</span></button>
+                    <div class="christmas-icon-wrapper">
+                        <i class="fa fa-gift christmas-icon"></i>
+                    </div>
+                    <h4 class="modal-title christmas-title" id="christmasModalLabel">¡Adelanta tu Dotación 2026!</h4>
+                    <span class="christmas-subtitle">Oferta Especial de Navidad</span>
+                </div>
+                <div class="modal-body christmas-body">
+                    <p class="christmas-text">
+                        En esta Navidad, MasterCraft te regala tranquilidad. 
+                        <strong>Congela precios de 2025</strong> en tus pedidos de enero y asegura la mejor calidad para tu equipo.
+                    </p>
+                    <a href="#contacto" class="btn btn-christmas" onclick="$('#christmasModal').modal('hide'); setTimeout(function(){ $('html, body').animate({ scrollTop: $('#contacto').offset().top - 80 }, 1000); }, 300);">
+                        Solicitar Cotización
+                    </a>
+                </div>
+                <div class="modal-footer christmas-footer">
+                    <p>🎄 Oferta válida hasta el 31 de Diciembre de 2025 🎄</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Christmas Modal Script -->
+    <script>
+        $(document).ready(function() {
+            // Show modal on load (every time page loads/reloads)
+            setTimeout(function() {
+                $('#christmasModal').modal('show');
+            }, 1000); // Small delay for better UX
+
+            // Auto hide after 20 seconds
+            var modalTimer = setTimeout(function() {
+                $('#christmasModal').modal('hide');
+            }, 21000); // 1s delay + 20s duration
+
+            // Clear timer if user manually closes to prevent issues
+            $('#christmasModal').on('hidden.bs.modal', function () {
+                clearTimeout(modalTimer);
+            });
+        });
+    </script>
+
     <!-- Product Quick View Modal -->
     <div class="modal fade" id="productModal" tabindex="-1" role="dialog" aria-labelledby="productModalLabel" aria-hidden="true">
         <div class="modal-dialog modal-lg" role="document">

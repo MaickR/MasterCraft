@@ -6,6 +6,17 @@
 
 ---
 
+## 📝 Últimos cambios (2025-12-10)
+
+- Sustitución de imágenes del banner por archivos locales optimizados y uso de `loading="lazy"`.
+- Ajustes de CSS responsivo para el banner (`.banner-subtitle`, `.banner-title`) evitando desbordes en móviles pequeños (320px y menores).
+- Reemplazo de imágenes en secciones de productos y corrección de rutas a `images/ISO/` para evitar errores 404.
+- Nueva sección **Certificaciones de Calidad** con tarjetas para ISO 9001, ISO 14001 e ISO 45001 (imágenes en `images/ISO/`).
+- Modal promocional de Navidad (centrado, autoabrible en carga, cierre automático en 20s) con estilo moderno y CTA a contacto.
+
+Estos cambios fueron aplicados el 10 de diciembre de 2025 y están listos para revisión visual en el entorno local.
+
+
 ## 📋 Descripción del Proyecto
 
 Este repositorio aloja el código fuente del sitio web oficial de **MasterCraft Uniforms**. La plataforma ha sido diseñada para reflejar la solidez y trayectoria de la compañía, ofreciendo a los clientes corporativos una experiencia de usuario fluida para la consulta de productos y solicitud de cotizaciones.
